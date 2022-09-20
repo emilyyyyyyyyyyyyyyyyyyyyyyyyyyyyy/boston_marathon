@@ -8,7 +8,7 @@ fp = Path.cwd()/"boston_data.csv"
 # read csv 
 with fp.open("r", newline="") as file:
     data = csv.reader(file)
-    next(data) # skip header
+    next(data)
     details = [] # to store details of each runner
     all_name = [] # to store just the name of runners 
     all_time = [] # to store just the time of runners
