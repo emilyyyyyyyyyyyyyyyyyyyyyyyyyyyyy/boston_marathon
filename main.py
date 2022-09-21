@@ -4,7 +4,7 @@ from pathlib import Path
 
 #----------- read data ------------#
 fp = Path.cwd()/"boston_data.csv"
-
+print(fp)
 # read csv 
 with fp.open("r", newline="") as file:
     data = csv.reader(file)
